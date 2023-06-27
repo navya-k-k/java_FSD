@@ -1,0 +1,56 @@
+/* Apply styles to the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Style the h1 heading */
+h1 {
+  color: #333;
+}
+
+/* Style the navigation links */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+ul li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Style the form inputs */
+form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+/* Style the form submit button */
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Apply additional styles as per your requirements */
