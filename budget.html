@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Team Budget Calculator</title>
+    <style>
+      body {
+        background-color: #f1f1f1;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 5px;
+      }
+      h1 {
+        margin-top: 0;
+        text-align: center;
+        color: #333333;
+      }
+      form {
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #333333;
+      }
+      input[type="text"],
+      input[type="number"],
+      button[type="submit"] {
+        padding: 8px;
+        font-size: 14px;
+        border-radius: 4px;
+        border: 1px solid #cccccc;
+        width: 100%;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+      button[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        cursor: pointer;
+      }
+      button[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      hr {
+        border: none;
+        border-top: 1px solid #cccccc;
+        margin: 20px 0;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #cccccc;
+        color: #333333;
+      }
+      .total {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Team Budget Calculator</h1>
+      <form id="dealForm">
+        <label for="vendorInput">Vendor:</label>
+        <input type="text" id="vendorInput" placeholder="Vendor Name" required /><br />
+        <label for="amountInput">Amount:</label>
+        <input type="number" id="amountInput" placeholder="Amount" required /><br />
+        <button type="submit">Add Deal</button>
+      </form>
+      <hr />
+      <h2>Deals:</h2>
+      <table id="dealTable">
+        <thead>
+          <tr>
+            <th>Vendor</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody id="dealList"></tbody>
+        <tfoot>
+          <tr>
+            <td class="total">Total Budget:</td>
+            <td id="totalBudget"></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <script>
+      // Array to store the deals
+      const deals = [];
+
+      // Function to calculate the budget for the team
+      function calculateBudget(deals) {
+        let totalBudget = 0;
+
+        // Iterate over each deal and sum up the amounts
+        for (let i = 0; i < deals.length; i++) {
+          totalBudget += deals[i].amount;
+        }
+
+        return totalBudget;
+      }
+
+      // Function to add a deal to the table and update the budget
+      function addDeal(event) {
+        event.preventDefault();
+
+        const vendorInput = document.getElementById('vendorInput');
+        const amountInput = document.getElementById('amountInput');
+        const dealTable = document.getElementById('dealTable');
+        const dealList = document.getElementById('dealList');
+        const totalBudget = document.getElementById('totalBudget');
+
+        // Get the input values
+        const vendor = vendorInput.value;
+        const amount = parseInt(amountInput.value);
+
+        // Create a deal object and add it to the array
+        const deal = { vendor, amount };
+        deals.push(deal);
+
+        // Create a new row for the deal
+        const row = document.createElement('tr');
+        const vendorCell = document.createElement('td');
+        const amountCell = document.createElement('td');
+
+        vendorCell.textContent = vendor;
+        amountCell.textContent = `${amount} rs`;
+
+        row.appendChild(vendorCell);
+        row.appendChild(amountCell);
+        dealList.appendChild(row);
+
+        // Calculate the updated budget and display it
+        const budget = calculateBudget(deals);
+        totalBudget.textContent = ` ${budget} rs`;
+
+        // Reset the input fields
+        vendorInput.value = '';
+        amountInput.value = '';
+      }
+
+      // Add event listener to the form submit event
+      const dealForm = document.getElementById('dealForm');
+      dealForm.addEventListener('submit', addDeal);
+    </script>
+  </body>
+</html>
