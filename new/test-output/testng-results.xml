@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-21T16:37:29 IST" name="Suite" finished-at="2023-07-21T16:38:48 IST" duration-ms="79226">
+    <groups>
+    </groups>
+    <test started-at="2023-07-21T16:37:29 IST" name="Test" finished-at="2023-07-21T16:38:48 IST" duration-ms="79226">
+      <class name="com.Register">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.Register@54422e18]" started-at="2023-07-21T16:37:29 IST" name="beforeMethod" finished-at="2023-07-21T16:37:31 IST" duration-ms="2030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="Oracle()[pri:0, instance:com.Register@54422e18]" started-at="2023-07-21T16:37:31 IST" name="Oracle" finished-at="2023-07-21T16:38:04 IST" duration-ms="33044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Oracle -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.Register@54422e18]" started-at="2023-07-21T16:38:04 IST" name="afterMethod" finished-at="2023-07-21T16:38:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.Register -->
+      <class name="com.login">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.login@1a75e76a]" started-at="2023-07-21T16:38:22 IST" name="beforeMethod" finished-at="2023-07-21T16:38:23 IST" duration-ms="1022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="Login()[pri:0, instance:com.login@1a75e76a]" started-at="2023-07-21T16:38:23 IST" name="Login" finished-at="2023-07-21T16:38:48 IST" duration-ms="24350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.login@1a75e76a]" started-at="2023-07-21T16:38:48 IST" name="afterMethod" finished-at="2023-07-21T16:38:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.login -->
+      <class name="com.AddCart">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.AddCart@33bc72d1]" started-at="2023-07-21T16:38:04 IST" name="beforeMethod" finished-at="2023-07-21T16:38:05 IST" duration-ms="1028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="AddCart()[pri:0, instance:com.AddCart@33bc72d1]" started-at="2023-07-21T16:38:05 IST" name="AddCart" finished-at="2023-07-21T16:38:22 IST" duration-ms="17681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddCart -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.AddCart@33bc72d1]" started-at="2023-07-21T16:38:22 IST" name="afterMethod" finished-at="2023-07-21T16:38:22 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.AddCart -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
