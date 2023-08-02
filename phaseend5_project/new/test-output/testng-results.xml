@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-02T10:43:00 IST" name="Suite" finished-at="2023-08-02T10:46:58 IST" duration-ms="238145">
+    <groups>
+    </groups>
+    <test started-at="2023-08-02T10:43:00 IST" name="Test" finished-at="2023-08-02T10:46:58 IST" duration-ms="238145">
+      <class name="com.flipkart">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:43:00 IST" name="setUp" finished-at="2023-08-02T10:43:03 IST" duration-ms="3264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:43:04 IST" name="setUp" finished-at="2023-08-02T10:43:05 IST" duration-ms="1446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Navigation()[pri:1, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:43:05 IST" name="Navigation" finished-at="2023-08-02T10:43:08 IST" duration-ms="2969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Navigation -->
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:43:08 IST" name="quitbrowser" finished-at="2023-08-02T10:43:23 IST" duration-ms="15325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitbrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:43:23 IST" name="setUp" finished-at="2023-08-02T10:43:25 IST" duration-ms="1664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LaodingPage()[pri:2, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:43:25 IST" name="LaodingPage" finished-at="2023-08-02T10:43:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaodingPage -->
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:43:25 IST" name="quitbrowser" finished-at="2023-08-02T10:43:40 IST" duration-ms="15261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitbrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:43:40 IST" name="setUp" finished-at="2023-08-02T10:43:42 IST" duration-ms="1477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Search()[pri:3, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:43:42 IST" name="Search" finished-at="2023-08-02T10:43:45 IST" duration-ms="3297" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div/button"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9f47780fc3505ef289e271205dc31b3c, findElement {using=xpath, value=/html/body/div[2]/div/div/button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:13394}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:13394/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9f47780fc3505ef289e271205dc31b3c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div/button"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9f47780fc3505ef289e271205dc31b3c, findElement {using=xpath, value=/html/body/div[2]/div/div/button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:13394}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:13394/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9f47780fc3505ef289e271205dc31b3c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at com.flipkart.Search(flipkart.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:43:45 IST" name="quitbrowser" finished-at="2023-08-02T10:44:00 IST" duration-ms="15358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitbrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:44:00 IST" name="setUp" finished-at="2023-08-02T10:44:02 IST" duration-ms="1420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoadingImage()[pri:4, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:44:02 IST" name="LoadingImage" finished-at="2023-08-02T10:44:05 IST" duration-ms="3431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoadingImage -->
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:44:05 IST" name="quitbrowser" finished-at="2023-08-02T10:44:21 IST" duration-ms="15328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitbrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:44:21 IST" name="setUp" finished-at="2023-08-02T10:44:22 IST" duration-ms="1457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Browser()[pri:5, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:44:22 IST" name="Browser" finished-at="2023-08-02T10:44:34 IST" duration-ms="11683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Browser -->
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:44:34 IST" name="quitbrowser" finished-at="2023-08-02T10:44:49 IST" duration-ms="15331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitbrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:44:49 IST" name="setUp" finished-at="2023-08-02T10:44:51 IST" duration-ms="1488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ScreenHeight()[pri:5, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:44:51 IST" name="ScreenHeight" finished-at="2023-08-02T10:44:53 IST" duration-ms="2791" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenHeight -->
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:44:53 IST" name="quitbrowser" finished-at="2023-08-02T10:45:09 IST" duration-ms="15307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitbrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:45:09 IST" name="setUp" finished-at="2023-08-02T10:45:10 IST" duration-ms="1483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ScrollPage()[pri:6, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:45:10 IST" name="ScrollPage" finished-at="2023-08-02T10:45:12 IST" duration-ms="2155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScrollPage -->
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:45:12 IST" name="quitbrowser" finished-at="2023-08-02T10:45:28 IST" duration-ms="15243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitbrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:45:28 IST" name="setUp" finished-at="2023-08-02T10:45:29 IST" duration-ms="1424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Refresh()[pri:7, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:45:29 IST" name="Refresh" finished-at="2023-08-02T10:45:32 IST" duration-ms="2880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Refresh -->
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:45:32 IST" name="quitbrowser" finished-at="2023-08-02T10:45:47 IST" duration-ms="15309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitbrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:45:47 IST" name="setUp" finished-at="2023-08-02T10:45:49 IST" duration-ms="1497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Bottom()[pri:8, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:45:49 IST" name="Bottom" finished-at="2023-08-02T10:45:53 IST" duration-ms="4128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Bottom -->
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:45:53 IST" name="quitbrowser" finished-at="2023-08-02T10:46:08 IST" duration-ms="15414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitbrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:46:08 IST" name="setUp" finished-at="2023-08-02T10:46:10 IST" duration-ms="1468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Resolution()[pri:9, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:46:10 IST" name="Resolution" finished-at="2023-08-02T10:46:28 IST" duration-ms="18335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Resolution -->
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:46:28 IST" name="quitbrowser" finished-at="2023-08-02T10:46:43 IST" duration-ms="15380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitbrowser -->
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:com.flipkart@74d1dc36]" started-at="2023-08-02T10:46:43 IST" name="quitbrowser" finished-at="2023-08-02T10:46:58 IST" duration-ms="15014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitbrowser -->
+      </class> <!-- com.flipkart -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
